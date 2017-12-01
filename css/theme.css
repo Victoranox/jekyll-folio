@@ -12,8 +12,8 @@
   --color-neutral-light: #d2d2d2;
   --color-neutral-dark: #575757;
   --border-radius: 10px;
-  --font-primary: "Quicksand", sans-serif;
-  --font-secondary: "Lato", sans-serif;
+  --font-primary: "Lato", sans-serif;
+  --font-secondary: "Quicksand", sans-serif;
 }
 
 html {
@@ -53,6 +53,7 @@ h4 {
 }
 
 h5 {
+  font-family: var(--font-primary);
   font-size: 1em;
   font-weight: 400;
 }
@@ -298,6 +299,12 @@ q ::after {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.card {
+  overflow: hidden;
+  border: solid 0;
+  border-radius: 10%;
 }
 
 .card-img {

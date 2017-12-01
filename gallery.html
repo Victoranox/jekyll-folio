@@ -6,9 +6,7 @@ layout: default
 
 
   <div class="grid">
-    {% include card.html cardclass='' url="/2015-motion-branding-piece/" title=news.title %}
-  </div>
-
-  <div class="grid">
-    {% include card.html cardclass='card' url="/love-buds/" title=news.title %}
+    {% for post in site.posts %}
+      {% include card.html cardclass='' url=post.url title=post.title %}
+    {% endfor %}
   </div>
