@@ -1,0 +1,12 @@
+  <div class="unit [ xs-1 s-1 m-1-3 l-1-4 ]">
+    <div class="card card-img embed">
+      {% for post in site.posts %}
+      <img class="img-flex" src="{{site.baseurl}}/images/SquarePrev.jpg" alt="">
+      <a href="{{site.baseurl}}{{post.url}}" class="pin-b-r gradient embed-item embed-4-by-3comp content-fill">
+        <div class="padding-b zindex-3 title push-0 align-center">
+          <h4 class="text-center pad-0 b-r">{{include.title}}</h4>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>

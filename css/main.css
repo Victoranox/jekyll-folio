@@ -15,7 +15,7 @@ body {
 }
 
 main {
-  background-color: #f07777;
+
 }
 
 .color-brand {
@@ -52,7 +52,6 @@ a:hover {
 .nav a {
   display: inline-block;
   padding: .5rem .75rem;
-
   text-decoration: none;
 }
 
@@ -135,8 +134,32 @@ li a:hover {
   width: 85%;
 }
 
-.boarder {
+.border {
+  padding-top: 6rem;
+  position: absolute;
+  left: 15%;
+  right: 15%;
+}
 
+.footer {
+  border: none;
+      background: #a5a5a5;
+      width: 75%;
+      border-radius: 50px;
+      margin: auto;
+
+}
+
+.footer ul li {
+  padding: .5rem;
+}
+
+.logo-head {
+
+}
+
+.content-break {
+  border-top: solid 2px;
 }
 
 @media only screen and (min-width: 25em) {
@@ -189,8 +212,6 @@ li a:hover {
   }
 
   .modal {
-    height: 700px;
-    width: 75%;
     margin: auto;
     overflow: hidden;
   }
@@ -198,7 +219,6 @@ li a:hover {
   .label {
     margin-top: -13%;
   }
-
 
 }
 
@@ -208,9 +228,5 @@ li a:hover {
     height: 300px;
   }
 
-  .modal {
-    width: 60%;
-
-  }
 
 }
