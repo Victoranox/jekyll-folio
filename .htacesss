@@ -1,0 +1,2 @@
+ErrorDocument 404 /404.html
+# you can specify pages for other error codes too
