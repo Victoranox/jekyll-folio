@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+  {% include nav.html %}
+
+
+  <div class="grid">
+    {% for post in site.categories.design %}
+      {% include card.html cardclass='' url=post.url title=post.title %}
+    {% endfor %}
+  </div>

@@ -1,12 +1,12 @@
 :root {
-  --color-primary: #8eb5d3;
-  --color-primary-light: #a9e2ff;
+  --color-primary: #eb008b;
+  --color-primary-light: #eb78b1;
   --color-primary-light-white: #bedcf4;
-  --color-primary-dark: #52778e;
-  --color-secondary: #443e98;
-  --color-accent: #e53c96;
+  --color-primary-dark: #65224a;
+  --color-secondary: #c6e6e4;
+  --color-accent: #4dffee;
   --color-accent-light: #ffd8ed;
-  --color-background: #454545;
+  --color-background: #333;
 
   --color-neutral: #b8b8b8;
   --color-neutral-light: #d2d2d2;
@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  background-color: var(--color-background);
   color: #fff;
 }
 
@@ -31,6 +32,7 @@ body {
 h1 {
   font-family: var(--font-secondary);
   font-size: 3.998em;
+  line-height: .9em;
 }
 
 h2 {
@@ -47,15 +49,18 @@ h3 {
 
 h4 {
   font-family: var(--font-secondary);
-  color: var(--color-primary-dark);
-  font-size: 1.414em;
+  color: var(--color-secondary);
+  font-size: 1.2em;
   font-weight: 400;
+  line-height: .5em;
+
 }
 
 h5 {
   font-family: var(--font-primary);
   font-size: 1em;
   font-weight: 400;
+  line-height: .4em;
 }
 
 h6 {
@@ -74,7 +79,13 @@ ul {
 }
 
 strong {
-  color: var(--color-primary: #8eb5d3);
+  color: var(--color-primary);
+}
+
+.nav {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
+  border: none;
+  border-radius: 40px 40px 0px 0px;
 }
 
 .nav ul {
@@ -82,7 +93,7 @@ strong {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+
 }
 
 .nav li a {
@@ -190,6 +201,15 @@ q ::after {
   text-decoration: none;
 }
 
+.btn-light {
+  text-decoration: none;
+  margin: .5rem;
+  padding: .5rem 1rem;
+  color: white;
+  background-color: #a5a5a5;;
+  border: none;
+  border-radius: 20px;
+}
 
 * {box-sizing:border-box}
 
@@ -233,7 +253,7 @@ q ::after {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: var(--color-primary: #eb008b);
   font-size: 40px;
   font-weight: bold;
   font-variant-caps: all-petite-caps;
@@ -295,16 +315,49 @@ q ::after {
   to {opacity: 1}
 }
 
-.title {
+.card-img a {
+  text-decoration: none;
   position: absolute;
-  bottom: 0;
+  padding-top: 50%;
   width: 100%;
+
+}
+
+.card-img a h4{
+  visibility: hidden;
+}
+
+.card-img a h4:hover {
+  animation: fade 1s infinite;
+  bottom: -15px;
+  position: relative;
+  visibility: visible;
+}
+
+
+@keyframes fade {
+  0% {
+    color: var(--color-secondary);
+    bottom: -8px;
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    color: var(--color-secondary);
+    bottom: -16px;
+    opacity: 100%;
+  }
 }
 
 .card {
   overflow: hidden;
   border: solid 0;
   border-radius: 10%;
+}
+
+.card a{
+  color: #fff;
+  box-shadow: 5px 10px;
 }
 
 .card-img {

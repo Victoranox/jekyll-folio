@@ -10,20 +10,12 @@ html {
 	box-sizing: inherit;
 }
 
-body {
-  background-color: #606060;
-}
-
-main {
-
-}
-
 .color-brand {
-  color: #f05555;
+  color: var(--color-primary: #eb008b);
 }
 
 .color-brand-dark {
-  color: #f03333;
+  color: var(--color-secondary: #eb008b);
 }
 
 h1, h2, h3 {
@@ -104,11 +96,6 @@ margin-top: -20%;
   /* position: relative; */
 }
 
-.center-img {
-  padding: 8px;
-  border: 1pt solid white;
-}
-
 .shadow {
   text-shadow: 10px 10px 17px rgba(110,0,0,1);
 }
@@ -135,18 +122,18 @@ li a:hover {
 }
 
 .border {
-  padding-top: 6rem;
+  padding-top: 3rem;
   position: absolute;
   left: 15%;
   right: 15%;
 }
 
 .footer {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
   border: none;
-      background: #a5a5a5;
-      width: 75%;
-      border-radius: 50px;
-      margin: auto;
+  border-radius: 0px 0px 40px 40px;
+  padding-top: 1em;
+  padding-bottom: .1rem;
 
 }
 
@@ -155,13 +142,25 @@ li a:hover {
 }
 
 .logo-head {
-
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .content-break {
   border-top: solid 2px;
 }
 
+.logo-bump {
+  padding-top: 7.5rem;
+}
+
+.max-width {
+  max-width: 1000px;
+}
+
+#copyright {
+  color: #f09999;
+}
 @media only screen and (min-width: 25em) {
 
 
@@ -186,9 +185,6 @@ li a:hover {
 
 @media only screen and (min-width: 30em) {
 
-  .arrows {
-
-  }
 
   .about-content {
     bottom: 0;

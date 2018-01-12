@@ -1,0 +1,116 @@
+---
+layout: default
+title: 2015 Motion Branding Piece
+meta: A personal exploration of my 2016 brand identity using different animation techniques
+source: https://bles0009.myportfolio.com/
+category: news
+preview: card-OIAF.jpg
+---
+
+{% include nav.html %}
+
+<div class="img-fade">
+  <img class="img-flex w-1" src="{{site.baseurl}}/images/OIAF/welcome.png" alt="">
+</div>
+
+<h2 class="text-center pad-b">Ottawa International Animation Festival</h2>
+
+<div class="pad-b">
+<p>I had the lovely opportunity to work with the Ottawa International Animation Festival(OIAF) for their 2017 production. During my contract I was responsible for designing and formatting the program guides, as well as building online advertisements, posters, festival passes, and visuals for the schedule application.
+<br>The visual theme of festival was a bit tricky this year- in that the curated festival poster for 2017 didn’t contain a lot of isolatable visuals to tie in with the rest of the festivals visuals. As a result I used a lot of texture to establish consistent themes across the various mediums.
+<br>For areas where we lacked visual content, such as the festival program page (usually containing a campaign image that was missing this year) - I supplied an illustration featuring visuals from the festivals poster combined with imagery of characters from select feature screenings.
+<br>This gave the festival guide a fitting visual introduction to the content of the event.</p>
+<p>I worked with SHAW and the OIAF to create an identity for the Ingenius youth program hosted at the NAC.
+<br>The logo was designed to evoke the educational nature of the event, by having the logo contain the image of a brain. Drawn in a manner similar to that of a childlike illustration, the smiling face and nods to cartoon animation gave the logo a fun and approachable feel without sacrificing legibility.</p>
+<h4 class="pad-t-2">Directional Signage - Print</h4>
+<p>I created a variety of signage templates to aid festival goers in navigating various festival venues. I incorporated the theme of limbs to create a literal hand point theme to all the signs.</p>
+<h4 class="pad-t-2 pad-b">Problems and Solutions</h4>
+<h5>Problem</h5>
+<p>The festival needed a fresh campaign for their posters and promotional materials for 2017. Previous campaigns were built on fun and playful Illustrated posters- but didn’t reflect the festival itself very strongly and potentially alienated locals. The festival needed a way to showcase individual screenings to a wider audience of people- while still identifying as part of the greater festival.</p>
+<h5>Solution</h5>
+<p>Rather than designing a separate campaign for the festival, I created a poster frame that could showcase the festivals featured screenings while establishing it as part of the festival. This design made it so the general public were more directly informed of local screenings, rather than having to recognised a general campaign and looking up the screenings online. Thus opening up the festival up to a wider audience of casual attendees.
+Overall I am happy to have been able to work with a festival I loved and worked with a wide variety of print and digital pieces.</p>
+</p>
+</div>
+
+<div class="pad-b">
+<div class="slideshow-container">
+  <div class="mySlides fade">
+      <a class="w-1" href="{{site.baseurl}}/design" >
+        <img class="center-img" src="{{site.baseurl}}/images/OIAF/Screen1.png">
+      </a>
+  </div>
+
+  <div class="mySlides fade">
+    <a class="w-1" href="{{site.baseurl}}/news/2017/06/24/Ottawa-International-Animation-Festival-2017" >
+      <img class="center-img" src="{{site.baseurl}}/images/OIAF/Screen2.png">
+    </a>
+  </div>
+
+  <div class="mySlides fade">
+      <a class="w-1" href="{{site.baseurl}}/news/2017/06/24/Ottawa-International-Animation-Festival-2017" >
+        <img class="center-img" src="{{site.baseurl}}/images/OIAF/Screen3.png">
+      </a>
+  </div>
+
+  <div class="mySlides fade">
+      <a class="w-1" href="{{site.baseurl}}/news/2017/06/24/Ottawa-International-Animation-Festival-2017" >
+        <img class="center-img" src="{{site.baseurl}}/images/OIAF/Screen4.png">
+      </a>
+  </div>
+
+  <div class="mySlides fade">
+      <a class="w-1" href="{{site.baseurl}}/news/2017/06/24/Ottawa-International-Animation-Festival-2017" >
+        <img class="center-img" src="{{site.baseurl}}/images/OIAF/Screen5.png">
+      </a>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="island" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+var slideTimer;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  clearTimeout(slideTimer);
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slideTimer = setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>

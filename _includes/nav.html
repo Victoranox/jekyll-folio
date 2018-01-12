@@ -1,7 +1,7 @@
 <ul class="list-group-inline pin-tc unit nav [ xs-1 s-1 m-1 l-1 ]">
-    <li class="w-1 ">
+    <li class="w-1">
       <div>
-        <a href="{{site.baseurl}}/">
+        <a href="{{site.baseurl}}/gallery">
           <svg id="cylkatest" width="219.7" height="108.2" viewBox="0 -10 219.7 108.2">
             <path fill="none" stroke="#40aba9" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M148.5 32.5L136 45.1 150.2 63c16.4 16.4 44.2 9.9 41.3-21 0 0-2-10.9-13.8-10.9-4.5 0-14 2.8-15 14.9-.7 9 5.3 16.9 13.5 17 12.4 0 15.7-11 15.6-18.3.3 7.7.9 15.1 2.9 18.2-2.1-2.9-3.9-13.9-2.4-29.9"/>
             <path fill="none" stroke="#40aba9" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M125.9 15.4v47.5c-.1-42.2-11.2-47.8-19.7-48.4v47.4c0 33.7-41.3 34.9-34.4 16.8l18.6-46.6-12.8 30-12-26.8c-6.1-12.1-7.1 11-15.4 22.3-4 5.5-12.4 6.2-17.5 4.4-7.7-2.8-13.9-9.5-14.6-21.2C17 24 27.6 15.2 35.7 15.2a15 15 0 0 1 12.5 6.1"/>
@@ -16,19 +16,23 @@
         </a>
       </div>
     </li>
-    <li class="hover gutter bracket island-1-2">
+    <li class="hover bracket gutter-1-2">
+      <a href="{{site.baseurl}}/" {% if page.url == '/' %} class="current" {% endif %} class="btn micro">FEATURED
+      </a>
+    </li>
+    <li class="hover bracket gutter-1-2">
       <a href="{{site.baseurl}}/design" {% if page.url == '/design/' %} class="current" {% endif %} class="btn micro">DESIGN
       </a>
     </li>
-    <li class="hover gutter bracket island-1-2">
+    <li class="hover bracket gutter-1-2">
       <a href="{{site.baseurl}}/illustration" {% if page.url == '/illustration/' %} class="current" {% endif %} class="btn micro">ILLUSTRATION
       </a>
     </li>
-    <li class="hover gutter bracket island-1-2">
+    <li class="hover bracket gutter-1-2">
       <a href="{{site.baseurl}}/motion" {% if page.url == '/motion/' %} class="current" {% endif %} class="btn micro">MOTION
       </a>
     </li>
-    <li class="hover gutter bracket island-1-2">
+    <li class="hover bracket gutter-1-2">
       <a href="{{site.baseurl}}/about" {% if page.url == '/about/' %} class="current" {% endif %} class="btn micro">ABOUT
       </a>
     </li>

@@ -4,14 +4,102 @@ title: Love Buds
 meta: Love Buds UI design
 source: https://bles0009.myportfolio.com/
 category: news
+preview: card-lovebuds.jpg
 ---
-
 {% include nav.html %}
 
-<img class="img-flex" src="{{site.baseurl}}/images/SquarePrev.jpg" alt="">
+  <div class="video-container">
+    <iframe class="" src="https://player.vimeo.com/video/247162948" width="100%" height="700px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
 
-A promotional video for my old brand from 2015. The video was fun to make, using a mix of stop motion and After Effects animation.
+<div class="pad-b">
+  <p>Love Buds is a couples application I designed to help bring long distance relationships closer. It allows couples to maintain healthy sex lives through a customizable and trackable smart toys. This application is designed to allow couples to sync with each others smart adult toys across long distances. With additional chat, video options, and an evocative remote control interface; couples have a platform to stay in touch, more than ever before.
+  <h5>Problems and  Solutions</h5>
+  <p>Issues I encountered was making the application approachable, as well as establishing a system that would make users feel safe and secure when using it with their partner. Security in social applications is an ever present issue, especially with the intimacy of this application.
+  To make the application approachable, I used round shapes and silly imagery to make the application fun and inviting. Despite the applications function, the interfaces was designed with brought colours and an abstract devicer interface, giving users the ability to control the device discreetly.</p>
+  <p>After user testing the interface, changes were made to the account creation to process to ensure security. In having a users account directly attached to a set of paired physical devices, the danger of potentially connecting with a stranger was eliminated.
+  This application was very fun to design! The subject matter was one that initially intimidated to work with, but by stepping out of my comfort zone I had the opportunity to work with an entirely new user experience.</p>
+</p>
+</div>
 
-<img class="pad-t img-flex" src="{{site.baseurl}}/images/SquarePrev.jpg" alt="">
-<img class="pad-t img-flex" src="{{site.baseurl}}/images/SquarePrev.jpg" alt="">
-<img class="pad-t img-flex" src="{{site.baseurl}}/images/SquarePrev.jpg" alt="">
+<div class="pad-b">
+<div class="slideshow-container">
+  <div class="mySlides fade">
+      <a href="{{site.baseurl}}/design" >
+        <img class="center-img" src="{{site.baseurl}}/images/screens/Lovebuds1.png">
+      </a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="{{site.baseurl}}/news/2017/06/24/Ottawa-International-Animation-Festival-2017" >
+      <img class="center-img" src="{{site.baseurl}}/images/screens/Lovebuds2.png">
+    </a>
+  </div>
+
+  <div class="mySlides fade">
+      <a href="{{site.baseurl}}/news/2017/06/24/Ottawa-International-Animation-Festival-2017" >
+        <img class="center-img" src="{{site.baseurl}}/images/screens/Lovebuds3.png">
+      </a>
+  </div>
+
+  <div class="mySlides fade">
+      <a href="{{site.baseurl}}/news/2017/06/24/Ottawa-International-Animation-Festival-2017" >
+        <img class="center-img" src="{{site.baseurl}}/images/screens/Lovebuds4.png">
+      </a>
+  </div>
+
+  <div class="mySlides fade">
+      <a href="{{site.baseurl}}/news/2017/06/24/Ottawa-International-Animation-Festival-2017" >
+        <img class="center-img" src="{{site.baseurl}}/images/screens/Lovebuds5.png">
+      </a>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="island" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</div>
+
+<img class="img-flex" style="background-color: white;"src="{{site.baseurl}}/images/screens/LOVEBUDSposter@4x.png" alt="">
+
+<script>
+var slideIndex = 1;
+var slideTimer;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  clearTimeout(slideTimer);
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slideTimer = setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
