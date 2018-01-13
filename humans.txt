@@ -1,0 +1,19 @@
+# humanstxt.org
+
+# TEAM
+
+Designer & Developer: Cecilia Bleszynski <design@cylka.ca>
+Site: http://cylka.ca
+Github: https://github.com/victoranox
+Location: Ottawa, Ontario.
+
+# THANKS
+
+  - codepen.io
+  - W3schools
+  - Thomas Bradly
+
+## Software
+
+  - Git + GitHub
+  - Jekyll
