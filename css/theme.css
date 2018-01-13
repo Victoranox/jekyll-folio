@@ -17,7 +17,11 @@
 }
 
 html {
-  font-family: var(--font-primary);
+  font-family: Arial, sans-serif;
+}
+
+.fonts-loaded {
+  font-family: "Quicksand", "Lato", sans-serif;
 }
 
 body {
@@ -82,7 +86,42 @@ strong {
   color: var(--color-primary);
 }
 
-.nav {
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.top-bracket {
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
   border: none;
   border-radius: 40px 40px 0px 0px;
@@ -237,18 +276,18 @@ q ::after {
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 27px;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 27px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: var(--color-primary-dark);
 }
 
 /* Caption text */
@@ -263,6 +302,8 @@ q ::after {
   width: 100%;
   text-align: center;
   width: 100%;
+  background-color: transparent;
+  text-shadow: 1px 1px 17px rgba(250,250,250,.7);
 
 }
 
@@ -315,36 +356,13 @@ q ::after {
   to {opacity: 1}
 }
 
-.card-img a {
-  text-decoration: none;
-  position: absolute;
-  padding-top: 50%;
-  width: 100%;
-
-}
-
-.card-img a h4{
-  visibility: hidden;
-}
-
-.card-img a h4:hover {
-  animation: fade 1s infinite;
-  bottom: -15px;
-  position: relative;
-  visibility: visible;
-}
-
-
 @keyframes fade {
   0% {
-    color: var(--color-secondary);
-    bottom: -8px;
+    color: var(--color-primary);
     opacity: 0;
-    visibility: visible;
   }
   100% {
-    color: var(--color-secondary);
-    bottom: -16px;
+    color: white;
     opacity: 100%;
   }
 }
