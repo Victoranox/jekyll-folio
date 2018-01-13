@@ -3,7 +3,6 @@
 ---
 
 {% include_relative 404.css %}
-{% include_relative common.css %}
 {% include_relative content.css %}
 {% include_relative modules.css %}
 {% include_relative grid.css %}

@@ -40,7 +40,6 @@ width: 800px;
 margin: auto;
 }
 
-
 .img-fade::after {
   display: block;
   position: relative;

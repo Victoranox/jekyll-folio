@@ -70,11 +70,6 @@ td {
   background-color: #dfdcda;
 }
 
-.btn:hover {
-  background-color: #f09999;
-  border-color: #f03333;
-}
-
 .label {
 position: absolute;
 margin-top: -20%;
