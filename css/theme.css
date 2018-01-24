@@ -25,7 +25,8 @@ html {
 }
 
 body {
-  background-color: var(--color-background);
+  background-image: url("https://media.giphy.com/media/3o751PsPNEgTAhnQYg/giphy.gif");
+  background-repeat: repeat;
   color: #fff;
 }
 
