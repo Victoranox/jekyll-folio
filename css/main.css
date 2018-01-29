@@ -176,10 +176,17 @@ li a:hover {
   background-repeat: repeat;
 }
 
-
+.decalTXT {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
 
 @media only screen and (min-width: 25em) {
 
+  .decalTXT {
+    font-size: 7rem;
+  }
 
   .frame {
     width: 75%;
@@ -202,6 +209,9 @@ li a:hover {
 
 @media only screen and (min-width: 30em) {
 
+  .decalTXT {
+    font-size: 9rem;
+  }
 
   .about-content {
     bottom: 0;
@@ -219,6 +229,10 @@ li a:hover {
 }
 
 @media only screen and (min-width: 60em) {
+
+  .decalTXT {
+    font-size: 9.5rem;
+  }
 
   .img1 {
     height: 250px;
