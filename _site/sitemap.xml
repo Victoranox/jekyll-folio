@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmls="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://cylka.ca/</loc>
+    <priority>0.1</prioroty>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://cylka.ca/gallery</loc>
+  </url>

@@ -1,0 +1,401 @@
+:root {
+  --color-primary: #eb008b;
+  --color-primary-light: #eb78b1;
+  --color-primary-light-white: #bedcf4;
+  --color-primary-dark: #65224a;
+  --color-secondary: #c6e6e4;
+  --color-accent: #4dffee;
+  --color-accent-light: #ffd8ed;
+  --color-background: #333;
+
+  --color-neutral: #b8b8b8;
+  --color-neutral-light: #d2d2d2;
+  --color-neutral-dark: #575757;
+  --border-radius: 10px;
+  --font-primary: "Lato", sans-serif;
+  --font-secondary: "Quicksand", sans-serif;
+}
+
+html {
+  font-family: Arial, sans-serif;
+}
+
+.fonts-loaded {
+  font-family: "Quicksand", "Lato", sans-serif;
+}
+
+body {
+  background-image: url("https://media.giphy.com/media/3o751PsPNEgTAhnQYg/giphy.gif");
+  background-repeat: repeat;
+  color: #fff;
+}
+
+.list {
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--font-secondary);
+  font-size: 3.998em;
+  line-height: .9em;
+}
+
+h2 {
+  font-family: var(--font-secondary);
+  font-size: 2.827em;
+  line-height: 1em;
+}
+
+h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: var(--font-secondary);
+  color: var(--color-secondary);
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: .5em;
+
+}
+
+h5 {
+  font-family: var(--font-primary);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: .4em;
+}
+
+h6 {
+  color: var(--color-primary);
+  font-size: .707em;
+  font-weight: 400;
+}
+
+p {
+  font-size: .707em;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+strong {
+  color: var(--color-primary);
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.top-bracket {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
+  border: none;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.nav ul {
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.nav li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.current {
+  color: #9ed8d4;
+}
+
+ol {
+  color: #fff;
+  background: var(--color-primary);
+  padding: 20px;
+}
+
+ol li {
+  padding: 5px;
+}
+
+dl {
+  border-left: 5px solid var(--color-primary);
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+blockquote {
+  font-style: italic;
+  width: 500px;
+  margin: .25em 0;
+  padding: .35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: var(--color-secondary);
+}
+
+blockquote ::before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+blockquote cite {
+  color: var(--font-secondary);
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite ::before {
+  content: "\2014 \2009";
+}
+
+cite {
+  color: var(--color-primary);
+}
+
+em {
+  color: var(--color-accent);
+}
+
+ins {
+  color: var(--color-accent);
+}
+
+abbr {
+  color: var(--color-primary);
+}
+
+dfn {
+  color: var(--color-primary-dark);
+}
+
+mark {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+q ::before {
+  content: "\201C";
+  font-size: 1em;
+  color: var(--color-primary-dark);
+}
+
+q ::after {
+  content: "\201C";
+  font-size: 1em;
+  color: var(--color-primary-dark);
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: .375em .75em .42em;
+  border-radius: 0px;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-light {
+  text-decoration: none;
+  margin: .5rem;
+  padding: .5rem 1rem;
+  color: white;
+  background-color: #a5a5a5;;
+  border: none;
+  border-radius: 20px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+    border-radius: 20%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 27px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 27px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Caption text */
+.text {
+  color: var(--color-primary: #eb008b);
+  font-size: 40px;
+  font-weight: bold;
+  font-variant-caps: all-petite-caps;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  text-shadow: 1px 1px 17px rgba(250,250,250,.7);
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.gradient {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  0% {
+    color: var(--color-primary);
+    opacity: 0;
+  }
+  100% {
+    color: white;
+    opacity: 100%;
+  }
+}
+
+.card {
+  overflow: hidden;
+  border: solid 0;
+  border-radius: 10%;
+}
+
+.card a{
+  color: #fff;
+  box-shadow: 5px 10px;
+}
+
+.card-img {
+  filter: grayscale(100%);
+  position: relative;
+  max-height: 15rem;
+  border: none;
+  margin: 0;
+  color: #fff;
+}
+
+.card-img:hover {
+
+  filter: grayscale(0%);
+}
+
+@media only screen and (min-width: 60em) {
+  .text {
+    font-size: 60px;
+  }
+
+}

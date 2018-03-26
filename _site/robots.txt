@@ -1,0 +1,4 @@
+Sitemap: https://cylka.ca/sitemap.xml
+
+User-agent: *
+Disallow: /img
