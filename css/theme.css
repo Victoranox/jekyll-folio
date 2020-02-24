@@ -6,7 +6,7 @@
   --color-secondary: #c6e6e4;
   --color-accent: #4dffee;
   --color-accent-light: #ffd8ed;
-  --color-background: #333;
+  --color-background: #222;
 
   --color-neutral: #b8b8b8;
   --color-neutral-light: #d2d2d2;
@@ -25,8 +25,9 @@ html {
 }
 
 body {
-  background-image: url("https://media.giphy.com/media/3o751PsPNEgTAhnQYg/giphy.gif");
-  background-repeat: repeat;
+  background: var(--color-background);
+/*  background-image: url("https://media.giphy.com/media/3o751PsPNEgTAhnQYg/giphy.gif");
+  background-repeat: repeat; */
   color: #fff;
 }
 
