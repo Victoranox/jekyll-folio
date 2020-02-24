@@ -166,7 +166,7 @@ li a:hover {
 .soft-bg {
   background-color: var(--color-background);
 
-    box-shadow:
+/*    box-shadow:
       0 0 40px 20px #333,
       0 0 100px 60px #333; /* middle magenta */
 }
