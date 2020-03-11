@@ -4,8 +4,8 @@
 
 {% include_relative 404.css %}
 {% include_relative content.css %}
-{% include_relative modules.css %}
 {% include_relative grid.css %}
-{% include_relative type.css %}
 {% include_relative main.css %}
+{% include_relative modules.css %}
 {% include_relative theme.css %}
+{% include_relative type.css %}
