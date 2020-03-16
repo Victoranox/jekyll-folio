@@ -3,7 +3,7 @@
   <p>Feel free to have a look around!</p>
 </div>
 
-<div class="pad-b-2 pad-t-2 ">
+<div class="pad-b-2">
   <div class="slideshow-container">
     <div class="mySlides fade">
         <a href="{{site.baseurl}}/design/motion/2018/06/15/LocalNow-Player-Motion-Design/" >
@@ -47,10 +47,15 @@
     <span class="dot" onclick="currentSlide(4)"></span>
   </div>
 
-  <div class="clickable hover bracket gutter-1-2 fade" style="text-align:center">
-    <a class="btn giga" href="{{site.baseurl}}/gallery">Full Gallery</a>
+  <div class="gutter-1-2" style="text-align:center">
   </div>
 </div>
+
+<ul class="grid">
+  {% for post in site.posts %}
+    {% include card.html cardclass='' data=post %}
+  {% endfor %}
+</ul>
 
 <script>
 var slideIndex = 1;

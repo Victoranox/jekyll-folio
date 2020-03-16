@@ -70,6 +70,7 @@ h5 {
 }
 
 h6 {
+  font-family: var(--font-secondary);
   color: var(--color-primary);
   font-size: .707em;
   font-weight: 400;
@@ -82,6 +83,12 @@ p {
 ul {
   list-style-type: none;
   text-align: center;
+}
+
+a {
+  font-family: var(--font-secondary);
+  letter-spacing: .04em;
+  font-weight: bold;
 }
 
 strong {
@@ -300,9 +307,11 @@ q ::after {
 /* Caption text */
 .text {
   color: var(--color-primary: #eb008b);
+  font-family: var(--font-secondary);
   font-size: 40px;
   font-weight: bold;
   font-variant-caps: all-petite-caps;
+  letter-spacing: .05em;
   padding: 8px 12px;
   position: absolute;
   bottom: 15px;
@@ -377,7 +386,7 @@ q ::after {
 .card {
   overflow: hidden;
   border: solid 0;
-  border-radius: 10%;
+  border-radius: 8%;
 }
 
 .card a{
@@ -386,7 +395,7 @@ q ::after {
 }
 
 .card-img {
-  filter: grayscale(100%);
+  filter: blur(0);
   position: relative;
   max-height: 15rem;
   border: none;
@@ -394,10 +403,31 @@ q ::after {
   color: #fff;
 }
 
-.card-img:hover {
-
-  filter: grayscale(0%);
+.card:hover .card-img{
+  transform: scale(1.1);
+  filter: blur(5px);
 }
+
+
+
+.card-text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0%;
+  }
+
+.card:hover .card-text{
+  opacity: 100%;
+  }
 
 @media only screen and (min-width: 60em) {
   .text {
