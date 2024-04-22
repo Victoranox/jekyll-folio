@@ -308,11 +308,11 @@ q ::after {
 .text {
   color: var(--color-primary: #eb008b);
   font-family: var(--font-secondary);
-  font-size: 40px;
+  font-size: 24px;
   font-weight: bold;
   font-variant-caps: all-petite-caps;
   letter-spacing: .05em;
-  padding: 8px 12px;
+  padding: 8px 8px;
   position: absolute;
   bottom: 15px;
   width: 100%;
